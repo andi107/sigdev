@@ -8,7 +8,4 @@ $router->group([
     'prefix' => 'api',
 ], function() use($router) {
     $router->get('track/status', 'TrackController@status');
-    $router->get('track/map', 'TrackController@map');
-    $router->get('track/log', 'TrackController@log');
-    $router->get('track/dummy', 'TrackController@dummyTrack');
 });

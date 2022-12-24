@@ -13,16 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('ignition2', function($table) {
-            $table->integer('tmpflag')->default(1);
-        });
-        Schema::table('geo_declare2', function($table) {
-            $table->integer('tmpflag')->default(1);
-        });
-        Schema::table('button_declare2', function($table) {
-            $table->integer('tmpflag')->default(1);
-        });
-        Schema::table('loc_relay2', function($table) {
+        // Schema::table('ignition2', function($table) {
+        //     $table->integer('tmpflag')->default(1);
+        // });
+        // Schema::table('geo_declare2', function($table) {
+        //     $table->integer('tmpflag')->default(1);
+        // });
+        // Schema::table('button_declare2', function($table) {
+        //     $table->integer('tmpflag')->default(1);
+        // });
+        Schema::table('loc_relay', function($table) {
             $table->integer('tmpflag')->default(1);
         });
     }
@@ -34,17 +34,17 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('ignition2', function($table) {
-            $table->dropColumn('tmpflag');
-        });
-        Schema::table('geo_declare2', function($table) {
-            $table->dropColumn('tmpflag');
-        });
-        Schema::table('button_declare2', function($table) {
-            $table->dropColumn('tmpflag');
-        });
-        Schema::table('loc_relay2', function($table) {
-            $table->dropColumn('tmpflag');
-        });
+        // Schema::table('ignition2', function($table) {
+        //     $table->dropColumn('tmpflag');
+        // });
+        // Schema::table('geo_declare2', function($table) {
+        //     $table->dropColumn('tmpflag');
+        // });
+        // Schema::table('button_declare2', function($table) {
+        //     $table->dropColumn('tmpflag');
+        // });
+        // Schema::table('loc_relay2', function($table) {
+        //     $table->dropColumn('tmpflag');
+        // });
     }
 };
